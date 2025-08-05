@@ -29,6 +29,6 @@ func WriteResponse(w http.ResponseWriter, r types.Response) error {
 		_, err := w.Write(r.Body)
 		return err
 	}
-	
+
 	return nil
 }

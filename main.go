@@ -23,11 +23,6 @@ func main() {
 		return
 	}
 
-	for _, mapping := range mappings {
-		log.Printf("path: %s\nmethod: %s\nstatus code: %d\nbody: %s\n",
-			mapping.Path, mapping.Method, mapping.Response.StatusCode, mapping.Response.Body)
-	}
-
 	mockServer := service.NewMockServer()
 	if err := mockServer.LoadMappings("/mock", mappings); err != nil {
 		log.Printf("error loading mappings: %s\n", err.Error())

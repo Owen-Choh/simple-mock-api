@@ -3,9 +3,10 @@ package utils
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Owen-Choh/simple-mock-api/mock-api/types"
 	"net/http"
 	"os"
+
+	"github.com/Owen-Choh/simple-mock-api/mock-api/types"
 )
 
 func ParseJsonFile(jsonFile *os.File, v interface{}) error {
@@ -17,18 +18,11 @@ func ParseJsonFile(jsonFile *os.File, v interface{}) error {
 }
 
 func WriteResponse(w http.ResponseWriter, r types.Response) error {
+	for key, value := range r.Headers {
+		w.Header().Set(key, value)
+	}
+
 	w.WriteHeader(r.StatusCode)
 
-	if r.Headers != nil {
-		for key, value := range r.Headers {
-			w.Header().Set(key, value)
-		}
-	}
-
-	if r.Body != nil {
-		_, err := w.Write(r.Body)
-		return err
-	}
-
-	return nil
+	return json.NewEncoder(w).Encode(r.Body)
 }

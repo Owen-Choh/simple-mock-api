@@ -4,12 +4,7 @@
     "method": "POST",
     "response": {
       "statusCode": 200,
-      "headers": {
-        "Content-Type": "application/json"
-      },
-      "body": {
-        "message": "Configuration loaded successfully"
-      }
+      "body": "Configuration loaded successfully"
     }
   },
   {
@@ -17,16 +12,11 @@
     "method": "GET",
     "response": {
       "statusCode": 200,
-      "headers": {
-        "Content-Type": "application/json"
-      },
-      "body": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "email": "john.doe@example.com"
-        }
-      ]
+      "body": {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com"
+      }
     }
   },
   {
@@ -34,14 +24,16 @@
     "method": "GET",
     "response": {
       "statusCode": 200,
-      "headers": {
-        "Content-Type": "application/json"
-      },
       "body": [
         {
           "id": 1,
           "name": "John Doe",
           "email": "john.doe@example.com"
+        },
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "email": "jane.smith@example.com"
         }
       ]
     }

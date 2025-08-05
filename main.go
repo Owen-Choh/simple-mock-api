@@ -12,7 +12,9 @@ func main() {
 	configFile, err := os.Open("config.json")
 	if err != nil {
 		fmt.Printf("opening config file: %s\n", err.Error())
+		return
 	}
+	defer configFile.Close()
 
 	if err := utils.ParseJsonFile(configFile, &config); err != nil {
 		fmt.Printf("parsing config file: %s\n", err.Error())
@@ -20,5 +22,4 @@ func main() {
 	}
 
 	fmt.Printf("%d %s", config.Status, config.Message)
-	return
 }

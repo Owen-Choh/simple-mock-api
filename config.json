@@ -1,4 +1,9 @@
 {
-  "status": 200,
-  "message": "Configuration loaded successfully"
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "message": "Configuration loaded successfully"
+  }
 }

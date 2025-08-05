@@ -1,6 +1,9 @@
 package types
 
+import "encoding/json"
+
 type Response struct {
-	Status  int    `json:"status"`
-	Message string `json:"message"`
+	StatusCode int               `json:"statusCode"`
+	Headers    map[string]string `json:"headers,omitempty"`
+	Body       json.RawMessage   `json:"body,omitempty"`
 }

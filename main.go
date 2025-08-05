@@ -21,5 +21,5 @@ func main() {
 		return
 	}
 
-	fmt.Printf("%d %s", config.Status, config.Message)
+	fmt.Printf("status code: %d \nbody: %s", config.StatusCode, config.Body)
 }

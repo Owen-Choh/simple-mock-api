@@ -1,9 +1,49 @@
-{
-  "statusCode": 200,
-  "headers": {
-    "Content-Type": "application/json"
+[
+  {
+    "path": "/login",
+    "method": "POST",
+    "response": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "message": "Configuration loaded successfully"
+      }
+    }
   },
-  "body": {
-    "message": "Configuration loaded successfully"
+  {
+    "path": "/user/",
+    "method": "GET",
+    "response": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "email": "john.doe@example.com"
+        }
+      ]
+    }
+  },
+  {
+    "path": "/users",
+    "method": "GET",
+    "response": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "email": "john.doe@example.com"
+        }
+      ]
+    }
   }
-}
+]

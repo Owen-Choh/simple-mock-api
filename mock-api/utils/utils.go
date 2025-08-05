@@ -1,12 +1,14 @@
 package utils
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/fs"
 	"net/http"
 	"os"
 	"path/filepath"
+	"strings"
 
 	"github.com/Owen-Choh/simple-mock-api/mock-api/types"
 )
@@ -54,7 +56,7 @@ func LoadMappingsFromDir(dir string) ([]types.Mapping, error) {
 
 		// Skip directories and non-json files
 		if d.IsDir() || filepath.Ext(path) != ".json" {
-			return nil 
+			return nil
 		}
 
 		var mappings []types.Mapping
@@ -72,4 +74,34 @@ func LoadMappingsFromDir(dir string) ([]types.Mapping, error) {
 	}
 
 	return allMappings, nil
+}
+
+// compares two slices of Mapping for equality.
+func MappingsEqual(a, b []types.Mapping) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	for i := range a {
+		if a[i].Path != b[i].Path || !strings.EqualFold(a[i].Method, b[i].Method) ||
+			a[i].Response.StatusCode != b[i].Response.StatusCode {
+			return false
+		}
+
+		if !bytes.Equal(
+			canonicalizeJSON(a[i].Response.Body),
+			canonicalizeJSON(b[i].Response.Body),
+		) {
+			return false
+		}
+	}
+
+	return true
+}
+
+// removes insignificant whitespace from JSON for consistent comparison.
+func canonicalizeJSON(input json.RawMessage) json.RawMessage {
+	var compacted bytes.Buffer
+	json.Compact(&compacted, input)
+	return compacted.Bytes()
 }

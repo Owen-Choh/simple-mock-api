@@ -1,0 +1,16 @@
+POST http://10.96.188.185/api/v1/login/
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJ1c2VySWRcIjogXCJTODVmMzg0N2M4OGJcIiwgXCJmdWxsTmFtZVwiOiBcIkpFU1MgTkdcIiwgXCJyb2xlTmFtZVwiOiBcIlNVUEVSVklTT1JcIiwgXCJlbWFpbFwiOiBcImplc3NAZ21haWwuY29tXCIsIFwic2Vzc2lvbklkXCI6IFwiYTBmMDA2MTEwNDA5NGQwMDlhOThcIn0iLCJleHAiOjE3NTQ0NTUzNjh9.IPWpkjE1oeUTjC69uQsk4G-RQx8FDbdyGiSv5RcoU1I",
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ7XCJ1c2VySWRcIjogXCJTODVmMzg0N2M4OGJcIiwgXCJmdWxsTmFtZVwiOiBcIkpFU1MgTkdcIiwgXCJyb2xlTmFtZVwiOiBcIlNVUEVSVklTT1JcIiwgXCJlbWFpbFwiOiBcImplc3NAZ21haWwuY29tXCIsIFwic2Vzc2lvbklkXCI6IFwiYTBmMDA2MTEwNDA5NGQwMDlhOThcIn0iLCJleHAiOjE3NTQ0NjE2Njh9.W0_s6IVQekOLnqrR1f80FcbAik1PWlErqf-YrOKNlE0",
+    "token_type": "bearer",
+    "access_token_expires_at": "2025-08-06T12:42:48.495193+08:00",
+    "refresh_token_expires_at": "2025-08-06T14:27:48.495995+08:00",
+    "session_expires_at": "2025-08-06T12:37:48.496200+08:00",
+    "server_time": "2025-08-06T12:27:48.496213+08:00"
+}
+
+
+DELETE http://10.96.188.185/api/v1/logout/
+
+{"msg":"Successful Log Out"}

@@ -1,0 +1,510 @@
+GET http://10.96.188.180/api/v1/patients/?name=&isActive=null&mask=true&pageNo=0&pageSize=10
+
+{
+    "data": [
+        {
+            "name": "ALICE LEE",
+            "nric": "*****567D",
+            "address": "71 KAMPONG BAHRU ROAD, #01-123, SINGAPORE 169373",
+            "tempAddress": "57 LORONG 5 TOA PAYOH, #05-234, SINGAPORE 310057",
+            "homeNo": "63699859",
+            "handphoneNo": "88888808",
+            "gender": "F",
+            "dateOfBirth": "2001-01-01T00:00:00",
+            "isApproved": "1",
+            "preferredName": "ALICEE",
+            "preferredLanguageId": 3,
+            "updateBit": "0",
+            "autoGame": "0",
+            "startDate": "2001-01-01T00:00:00",
+            "endDate": null,
+            "isActive": "1",
+            "isRespiteCare": "0",
+            "privacyLevel": 1,
+            "terminationReason": "",
+            "inActiveReason": "",
+            "inActiveDate": null,
+            "profilePicture": "https://res.cloudinary.com/dbpearfyp/image/upload/v1742673271/snnufzqgsrn2rfy9xrza.webp",
+            "isDeleted": 0,
+            "id": 1,
+            "createdDate": "2001-01-01T00:00:00",
+            "modifiedDate": "2025-03-27T06:10:31.373000",
+            "CreatedById": "1",
+            "ModifiedById": "S85f3847c88b"
+        },
+        {
+            "name": "BI GONG",
+            "nric": "*****443F",
+            "address": "41 SUNGEI KADUT LOOP S 729509, SINGAPORE",
+            "tempAddress": "42 SUNGEI KADUT LOOP S 729509, SINGAPORE",
+            "homeNo": "60608123",
+            "handphoneNo": "98123144",
+            "gender": "M",
+            "dateOfBirth": "1980-04-04T00:00:00",
+            "isApproved": "0",
+            "preferredName": "BI",
+            "preferredLanguageId": 27,
+            "updateBit": "0",
+            "autoGame": "0",
+            "startDate": "2021-01-01T00:00:00",
+            "endDate": null,
+            "isActive": "1",
+            "isRespiteCare": "0",
+            "privacyLevel": 1,
+            "terminationReason": "",
+            "inActiveReason": "",
+            "inActiveDate": null,
+            "profilePicture": "",
+            "isDeleted": 0,
+            "id": 4,
+            "createdDate": "2021-01-01T00:00:00",
+            "modifiedDate": "2025-03-22T19:51:58.233000",
+            "CreatedById": "1",
+            "ModifiedById": "S85f3847c88b"
+        },
+        {
+            "name": "JON ONG",
+            "nric": "*****300H",
+            "address": "BLK 3007 UBI RD 1 05-412, 406701, SINGAPORE",
+            "tempAddress": "",
+            "homeNo": "67485000",
+            "handphoneNo": "87489859",
+            "gender": "M",
+            "dateOfBirth": "1980-03-03T00:00:00",
+            "isApproved": "1",
+            "preferredName": "JON",
+            "preferredLanguageId": 3,
+            "updateBit": "1",
+            "autoGame": "0",
+            "startDate": "2021-01-01T00:00:00",
+            "endDate": null,
+            "isActive": "1",
+            "isRespiteCare": "0",
+            "privacyLevel": 1,
+            "terminationReason": "",
+            "inActiveReason": "",
+            "inActiveDate": null,
+            "profilePicture": "https://res.cloudinary.com/dbpearfyp/image/upload/v1740494190/l2ghwdqqbrmrsgandk7y.jpg",
+            "isDeleted": 0,
+            "id": 3,
+            "createdDate": "2021-01-01T00:00:00",
+            "modifiedDate": "2025-03-19T14:36:23.843000",
+            "CreatedById": "1",
+            "ModifiedById": "S85f3847c88b"
+        },
+        {
+            "name": "MASON TAN",
+            "nric": "*****282F",
+            "address": "41 SUNGEI KADUT LOOP S 729509, SINGAPORE",
+            "tempAddress": "41 SUNGEI KADUT LOOP S 729509, SINGAPORE",
+            "homeNo": "68052164",
+            "handphoneNo": "91685475",
+            "gender": "M",
+            "dateOfBirth": "1980-04-04T00:00:00",
+            "isApproved": "1",
+            "preferredName": "MASON",
+            "preferredLanguageId": 1,
+            "updateBit": "1",
+            "autoGame": "0",
+            "startDate": "2025-07-18T07:11:13.233000",
+            "endDate": "2025-07-18T07:11:13.233000",
+            "isActive": "1",
+            "isRespiteCare": "1",
+            "privacyLevel": 1,
+            "terminationReason": "",
+            "inActiveReason": "",
+            "inActiveDate": null,
+            "profilePicture": "",
+            "isDeleted": 0,
+            "id": 7,
+            "createdDate": "2025-07-18T07:15:33.027000",
+            "modifiedDate": "2025-07-18T07:15:33.027000",
+            "CreatedById": "anonymous",
+            "ModifiedById": "anonymous"
+        },
+        {
+            "name": "NELSON TAN",
+            "nric": "*****822F",
+            "address": "41 SUNGEI KADUT LOOP S 729509, SINGAPORE",
+            "tempAddress": "41 SUNGEI KADUT LOOP S 729509, SINGAPORE",
+            "homeNo": "68052164",
+            "handphoneNo": "91685471",
+            "gender": "M",
+            "dateOfBirth": "1980-04-04T00:00:00",
+            "isApproved": "1",
+            "preferredName": "MASON",
+            "preferredLanguageId": 1,
+            "updateBit": "1",
+            "autoGame": "0",
+            "startDate": "2025-07-18T07:11:13.233000",
+            "endDate": "2025-07-18T07:11:13.233000",
+            "isActive": "1",
+            "isRespiteCare": "1",
+            "privacyLevel": 1,
+            "terminationReason": "",
+            "inActiveReason": "",
+            "inActiveDate": null,
+            "profilePicture": "",
+            "isDeleted": 0,
+            "id": 8,
+            "createdDate": "2025-07-18T08:07:46.627000",
+            "modifiedDate": "2025-07-18T08:07:46.627000",
+            "CreatedById": "anonymous",
+            "ModifiedById": "anonymous"
+        },
+        {
+            "name": "strin3g",
+            "nric": "*****ring",
+            "address": "string",
+            "tempAddress": "string",
+            "homeNo": "string",
+            "handphoneNo": "string",
+            "gender": "M",
+            "dateOfBirth": "2025-08-05T15:50:04.467000",
+            "isApproved": "1",
+            "preferredName": "string",
+            "preferredLanguageId": 1,
+            "updateBit": "1",
+            "autoGame": "1",
+            "startDate": "2025-08-05T15:50:04.467000",
+            "endDate": "2025-08-05T15:50:04.467000",
+            "isActive": "1",
+            "isRespiteCare": "1",
+            "privacyLevel": 0,
+            "terminationReason": "string",
+            "inActiveReason": "string",
+            "inActiveDate": "2025-08-05T15:50:04.467000",
+            "profilePicture": "string",
+            "isDeleted": 0,
+            "id": 10,
+            "createdDate": "2025-07-31T15:17:57.093000",
+            "modifiedDate": "2025-08-05T16:46:03.320000",
+            "CreatedById": "anonymous",
+            "ModifiedById": "anonymous"
+        },
+        {
+            "name": "YAN YI",
+            "nric": "*****148C",
+            "address": "1000 ANSON ROAD #30-08 INTERNATIONAL PLAZA, 079903, SINGAPORE",
+            "tempAddress": "",
+            "homeNo": "62260000",
+            "handphoneNo": "90908563",
+            "gender": "F",
+            "dateOfBirth": "1980-02-02T00:00:00",
+            "isApproved": "1",
+            "preferredName": "YY",
+            "preferredLanguageId": 2,
+            "updateBit": "1",
+            "autoGame": "0",
+            "startDate": "2021-01-01T00:00:00",
+            "endDate": null,
+            "isActive": "1",
+            "isRespiteCare": "0",
+            "privacyLevel": 1,
+            "terminationReason": "",
+            "inActiveReason": "",
+            "inActiveDate": null,
+            "profilePicture": "https://res.cloudinary.com/dbpearfyp/image/upload/v1634521792/Patient/Yan_Yi_Sxxxx148C/ProfilePicture/g5gnecfsoc8igp56dwnb.jpg",
+            "isDeleted": 0,
+            "id": 2,
+            "createdDate": "2021-01-01T00:00:00",
+            "modifiedDate": "2025-03-19T14:36:04.060000",
+            "CreatedById": "1",
+            "ModifiedById": "S85f3847c88b"
+        }
+    ],
+    "pageNo": 0,
+    "pageSize": 10,
+    "totalRecords": 7,
+    "totalPages": 1
+}
+
+GET http://10.96.188.180/api/v1/patients/1
+
+{
+    "data": {
+        "name": "ALICE LEE",
+        "nric": "*****567D",
+        "address": "71 KAMPONG BAHRU ROAD, #01-123, SINGAPORE 169373",
+        "tempAddress": "57 LORONG 5 TOA PAYOH, #05-234, SINGAPORE 310057",
+        "homeNo": "63699859",
+        "handphoneNo": "88888808",
+        "gender": "F",
+        "dateOfBirth": "2001-01-01T00:00:00",
+        "isApproved": "1",
+        "preferredName": "ALICEE",
+        "preferredLanguageId": 3,
+        "updateBit": "0",
+        "autoGame": "0",
+        "startDate": "2001-01-01T00:00:00",
+        "endDate": null,
+        "isActive": "1",
+        "isRespiteCare": "0",
+        "privacyLevel": 1,
+        "terminationReason": "",
+        "inActiveReason": "",
+        "inActiveDate": null,
+        "profilePicture": "https://res.cloudinary.com/dbpearfyp/image/upload/v1742673271/snnufzqgsrn2rfy9xrza.webp",
+        "isDeleted": 0,
+        "id": 1,
+        "createdDate": "2001-01-01T00:00:00",
+        "modifiedDate": "2025-03-27T06:10:31.373000",
+        "CreatedById": "1",
+        "ModifiedById": "S85f3847c88b"
+    }
+}
+
+GET http://10.96.188.180/api/v1/PatientAssignedDementiaList
+
+[
+    {
+        "Value": "Alzheimer Disease",
+        "IsDeleted": "0",
+        "DementiaTypeListId": 1,
+        "CreatedDate": "2025-01-01T09:00:00",
+        "ModifiedDate": "2025-01-01T09:00:00"
+    },
+    {
+        "Value": "Vascular Dementia",
+        "IsDeleted": "0",
+        "DementiaTypeListId": 2,
+        "CreatedDate": "2025-01-01T09:15:00",
+        "ModifiedDate": "2025-01-01T09:20:00"
+    },
+    {
+        "Value": "Lewy Body Dementia",
+        "IsDeleted": "0",
+        "DementiaTypeListId": 3,
+        "CreatedDate": "2025-01-01T10:00:00",
+        "ModifiedDate": "2025-01-01T10:05:00"
+    },
+    {
+        "Value": "Frontotemporal Dementia",
+        "IsDeleted": "0",
+        "DementiaTypeListId": 4,
+        "CreatedDate": "2025-01-01T11:00:00",
+        "ModifiedDate": "2025-01-01T11:10:00"
+    },
+    {
+        "Value": "Mixed Dementia",
+        "IsDeleted": "1",
+        "DementiaTypeListId": 5,
+        "CreatedDate": "2025-01-01T12:00:00",
+        "ModifiedDate": "2025-01-01T12:30:00"
+    },
+    {
+        "Value": "string",
+        "IsDeleted": "0",
+        "DementiaTypeListId": 6,
+        "CreatedDate": "2025-01-21T14:07:59.120000",
+        "ModifiedDate": "2025-01-21T14:07:59.120000"
+    },
+    {
+        "Value": "testing123",
+        "IsDeleted": "0",
+        "DementiaTypeListId": 7,
+        "CreatedDate": "2025-03-17T07:27:00.317000",
+        "ModifiedDate": "2025-03-17T07:27:00.317000"
+    }
+]
+
+
+GET http://10.96.188.180/api/v1/DoctorNote/GetDoctorNotesByPatient?patient_id=1&pageNo=0&pageSize=10
+
+{"data":[],"pageNo":0,"pageSize":10,"totalRecords":0,"totalPages":0}
+
+
+GET http://10.96.188.180/api/v1/Mobility/List
+
+[
+    {
+        "MobilityListId": 0,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-05-31T14:26:58.093000",
+        "ModifiedDateTime": "2025-05-31T14:30:44.907000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "string"
+    },
+    {
+        "MobilityListId": 1,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-05-31T14:26:58.093000",
+        "ModifiedDateTime": "2025-05-31T14:42:35.170000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "Cane"
+    },
+    {
+        "MobilityListId": 2,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-01-17T22:37:39.497000",
+        "ModifiedDateTime": "2025-01-17T22:37:39.497000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "Crutches"
+    },
+    {
+        "MobilityListId": 3,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-01-17T22:37:39.497000",
+        "ModifiedDateTime": "2025-01-17T22:37:39.497000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "Walkers"
+    },
+    {
+        "MobilityListId": 4,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-01-17T22:37:39.497000",
+        "ModifiedDateTime": "2025-01-17T22:37:39.497000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "Gait trainers"
+    },
+    {
+        "MobilityListId": 5,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-01-17T22:37:39.497000",
+        "ModifiedDateTime": "2025-01-17T22:37:39.497000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "Scooter"
+    },
+    {
+        "MobilityListId": 6,
+        "IsDeleted": 0,
+        "CreatedDateTime": "2025-01-17T22:37:39.497000",
+        "ModifiedDateTime": "2025-01-17T22:37:39.497000",
+        "CreatedById": "1",
+        "ModifiedById": "1",
+        "Value": "Wheelchairs"
+    }
+]
+
+
+GET http://10.96.188.180/api/v1/PatientListLanguage/
+
+[
+    {
+        "isDeleted": "0",
+        "value": "Not to tell",
+        "id": 1,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "English",
+        "id": 2,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Hainanese",
+        "id": 3,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Hakka",
+        "id": 4,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Hindi",
+        "id": 5,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Hokkien",
+        "id": 6,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Malay",
+        "id": 7,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Mandarin",
+        "id": 8,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Tamil",
+        "id": 9,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Teochew",
+        "id": 10,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Japanese",
+        "id": 11,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Spanish",
+        "id": 12,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Korean",
+        "id": 13,
+        "createdDate": "2024-10-05T21:46:52.133000",
+        "modifiedDate": "2024-10-05T21:46:52.133000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Arabic",
+        "id": 27,
+        "createdDate": "2025-02-05T15:06:52.340000",
+        "modifiedDate": "2025-02-05T15:06:52.340000"
+    },
+    {
+        "isDeleted": "0",
+        "value": "Cantonese",
+        "id": 30,
+        "createdDate": "2025-02-05T23:51:47.850000",
+        "modifiedDate": "2025-02-05T23:51:47.850000"
+    }
+]
+
+
+GET http://10.96.188.180/api/v1/PatientAssignedDementia/Patient/1?pageNo=0&pageSize=10
+
+{"detail":"No assigned dementias found for patient with ID 1"}
+
+
+GET http://10.96.188.180/api/v1/MobilityMapping/List/Patient/1?pageNo=0&pageSize=10
+
+{"detail":"No mobility entries found for Patient ID 1."}
+
+
+GET http://10.96.188.180/api/v1/SocialHistory?patient_id=1
+
+{"detail":"Internal server error. Please contact People in charge of servers."}
+

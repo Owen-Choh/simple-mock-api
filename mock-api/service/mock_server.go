@@ -64,7 +64,7 @@ func (ms *MockServer) createAndLoadMux() (*http.ServeMux, error) {
 // It triggers the reloading of mappings and updates the active handler.
 func (ms *MockServer) handleReload(w http.ResponseWriter, r *http.Request) {
 	log.Println("received reload request. attempting to reload mappings...")
-	
+
 	if err := ms.RegisterHandlers(); err != nil {
 		http.Error(w, fmt.Sprintf("Error reloading mappings: %s", err.Error()), http.StatusInternalServerError)
 		log.Printf("failed to reload mappings: %v", err)
@@ -82,7 +82,8 @@ func (ms *MockServer) Start(addr string) error {
 		return fmt.Errorf("address cannot be empty")
 	}
 
-	handlerWithMiddleware := middleware.LoggingMiddleware(ms.Handler)
+	handlerWithMiddleware := middleware.LoggingMiddleware(
+		middleware.CORS(middleware.DefaultCORSOptions)(ms.Handler))
 
 	server := &http.Server{
 		Addr:    addr,

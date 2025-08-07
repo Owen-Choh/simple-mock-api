@@ -11,7 +11,7 @@ var mappingsDir string = "./mappings"
 func main() {
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 	
-	mockServer := service.NewMockServer("/mock", mappingsDir)
+	mockServer := service.NewMockServer("/mock/api/v1", mappingsDir)
 	if err := mockServer.RegisterHandlers(); err != nil {
 		log.Printf("error loading mappings: %s\n", err.Error())
 		return

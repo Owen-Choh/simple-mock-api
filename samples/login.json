@@ -19,6 +19,7 @@
         "path": "/logout/",
         "method": "DELETE",
         "response": {
+            "statusCode": 200,
             "msg": "Successful Log Out"
         }
     }

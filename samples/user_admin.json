@@ -1,0 +1,72 @@
+[
+    {
+        "path": "/current_user/",
+        "method": "GET",
+        "response": {
+            "statusCode": 200,
+            "body": {
+                "userId": "S85f3847c88b",
+                "fullName": "JESS NG",
+                "roleName": "ADMIN",
+                "email": "jess@gmail.com"
+            }
+        }
+    },
+    {
+        "path": "/user/get_user/",
+        "method": "GET",
+        "response": {
+            "statusCode": 200,
+            "body": {
+                "id": "S85f3847c88b",
+                "preferredName": null,
+                "nric_FullName": "JESS NG",
+                "nric": "*****674B",
+                "nric_Address": "123 Jurong West Ave 1 #04-332 Singapore 550123",
+                "nric_DateOfBirth": "2000-01-20",
+                "nric_Gender": "F",
+                "roleName": "ADMIN",
+                "contactNo": "89992293",
+                "allowNotification": true,
+                "profilePicture": "https://res.cloudinary.com/dnusi4qsd/image/upload/v1739162931/profile_pictures/user_U85f3847c88b_profile_picture.jpg",
+                "email": "jess@gmail.com",
+                "emailConfirmed": true,
+                "verified": true,
+                "isDeleted": false,
+                "twoFactorEnabled": false
+            }
+        }
+    },
+    {
+        "path": "/admin/get_users_by_fields",
+        "method": "POST",
+        "response": {
+            "statusCode": 200,
+            "body": {
+                "users": [
+                    {
+                        "id": "S85f3847c88b",
+                        "preferredName": null,
+                        "nric_FullName": "JESS NG",
+                        "nric": "*****674B",
+                        "nric_Address": "123 Jurong West Ave 1 #04-332 Singapore 550123",
+                        "nric_DateOfBirth": "2000-01-20",
+                        "nric_Gender": "F",
+                        "roleName": "ADMIN",
+                        "contactNo": "89992293",
+                        "allowNotification": true,
+                        "profilePicture": "https://res.cloudinary.com/dnusi4qsd/image/upload/v1739162931/profile_pictures/user_U85f3847c88b_profile_picture.jpg",
+                        "email": "jess@gmail.com",
+                        "emailConfirmed": true,
+                        "verified": true,
+                        "isDeleted": false,
+                        "twoFactorEnabled": false
+                    }
+                ],
+                "page": 1,
+                "page_size": 10,
+                "total": 1
+            }
+        }
+    }
+]

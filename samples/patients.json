@@ -291,24 +291,26 @@
         "response": {
             "statusCode": 200,
             "body": {
-                "data": {
-                    "isDeleted": "false",
-                    "patientId": 1,
-                    "prescriptionListId": 1,
-                    "dosage": "string",
-                    "frequencyPerDay": 1,
-                    "instruction": "string",
-                    "startDate": "string",
-                    "endDate": "string",
-                    "isAfterMeal": "string",
-                    "prescriptionRemarks": "string",
-                    "status": "string",
-                    "id": 1,
-                    "createdDateTime": "string",
-                    "updatedDateTime": "string",
-                    "createdById": "string",
-                    "modifiedById": "string"
-                }
+                "data": [
+                    {
+                        "isDeleted": "false",
+                        "patientId": 1,
+                        "prescriptionListId": 1,
+                        "dosage": "1",
+                        "frequencyPerDay": 1,
+                        "instruction": "test instruction",
+                        "startDate": "2025-07-18T07:11:13.233000",
+                        "endDate": "2025-07-18T07:11:13.233000",
+                        "isAfterMeal": "1",
+                        "prescriptionRemarks": "test remarks",
+                        "status": "string",
+                        "id": 1,
+                        "createdDateTime": "2025-07-18T07:11:13.233000",
+                        "updatedDateTime": "2025-07-18T07:11:13.233000",
+                        "createdById": "0",
+                        "modifiedById": "0"
+                    }
+                ]
             }
         }
     }

@@ -511,17 +511,241 @@ GET http://10.96.188.180/api/v1/SocialHistory?patient_id=1
 GET http://10.96.188.180/api/v1/PrescriptionList/?pageNo=0&pageSize=100
 
 {
-  data: PrescriptionList[];
-  pageNo: number;
-  pageSize: number;
-  totalRecords: number;
-  totalPages: number;
+    "data": [
+        {
+            "IsDeleted": true,
+            "Value": "Loratadine",
+            "Id": 14,
+            "CreatedDateTime": "2025-09-30T12:53:57.733000",
+            "UpdatedDateTime": "2025-09-30T12:56:02.473000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Antihistamines",
+            "Id": 13,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Dextromethorphan",
+            "Id": 12,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Salbutamol",
+            "Id": 11,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Rivastigmine",
+            "Id": 10,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Paracetamol",
+            "Id": 9,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Olanzapine",
+            "Id": 8,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Memantine",
+            "Id": 7,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Ibuprofen",
+            "Id": 6,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Guaifenesin",
+            "Id": 5,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Galantamine",
+            "Id": 4,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Donepezil",
+            "Id": 3,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Diphenhydramine",
+            "Id": 2,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Acetaminophen",
+            "Id": 1,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        }
+    ],
+    "pageNo": 0,
+    "pageSize": 100,
+    "totalRecords": 14,
+    "totalPages": 1
 }
 
-PrescriptionList {
-  Id: number;
-  IsDeleted: string;
-  CreatedDateTime: string;
-  UpdatedDateTime: string;
-  Value: string;
+GET http://10.96.188.180/api/v1/Prescription/7
+
+{
+    "data": {
+        "IsDeleted": "0",
+        "PatientId": 1,
+        "PrescriptionListId": 2,
+        "Dosage": "1",
+        "FrequencyPerDay": 2,
+        "Instruction": "E2E test edit",
+        "StartDate": "2025-08-26T00:00:00",
+        "EndDate": "2025-09-09T00:00:00",
+        "IsAfterMeal": "1",
+        "PrescriptionRemarks": "created via e2e",
+        "Status": "0",
+        "Id": 7,
+        "CreatedDateTime": "2025-08-25T07:00:06.410000",
+        "UpdatedDateTime": "2025-10-15T06:04:09.673000",
+        "CreatedById": "S85f3847c88b",
+        "ModifiedById": "S85f3847c88b"
+    }
+}
+
+
+GET http://10.96.188.180/api/v1/PrescriptionList?pageNo=0&pageSize=100
+
+{
+    "data": [
+        {
+            "IsDeleted": true,
+            "Value": "Loratadine",
+            "Id": 14,
+            "CreatedDateTime": "2025-09-30T12:53:57.733000",
+            "UpdatedDateTime": "2025-09-30T12:56:02.473000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Antihistamines",
+            "Id": 13,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Dextromethorphan",
+            "Id": 12,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Salbutamol",
+            "Id": 11,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Rivastigmine",
+            "Id": 10,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Paracetamol",
+            "Id": 9,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Olanzapine",
+            "Id": 8,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Memantine",
+            "Id": 7,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Ibuprofen",
+            "Id": 6,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Guaifenesin",
+            "Id": 5,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Galantamine",
+            "Id": 4,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Donepezil",
+            "Id": 3,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Diphenhydramine",
+            "Id": 2,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        },
+        {
+            "IsDeleted": false,
+            "Value": "Acetaminophen",
+            "Id": 1,
+            "CreatedDateTime": "2025-01-17T20:27:46.063000",
+            "UpdatedDateTime": "2025-01-17T20:27:46.063000"
+        }
+    ],
+    "pageNo": 0,
+    "pageSize": 100,
+    "totalRecords": 14,
+    "totalPages": 1
 }

@@ -262,5 +262,54 @@
                 }
             }
         }
+    },
+    {
+        "path": "/PrescriptionList/",
+        "method": "GET",
+        "response": {
+            "statusCode": 200,
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "isDeleted": "false",
+                        "createdDateTime": "2001-01-01T00:00:00",
+                        "updatedDateTime": "2025-03-27T06:10:31.373000",
+                        "value": "string value"
+                    }
+                ],
+                "pageNo": 0,
+                "pageSize": 1,
+                "totalRecords": 1,
+                "totalPages": 1
+            }
+        }
+    },
+    {
+        "path": "/Prescription/",
+        "method": "GET",
+        "response": {
+            "statusCode": 200,
+            "body": {
+                "data": {
+                    "isDeleted": "false",
+                    "patientId": 1,
+                    "prescriptionListId": 1,
+                    "dosage": "string",
+                    "frequencyPerDay": 1,
+                    "instruction": "string",
+                    "startDate": "string",
+                    "endDate": "string",
+                    "isAfterMeal": "string",
+                    "prescriptionRemarks": "string",
+                    "status": "string",
+                    "id": 1,
+                    "createdDateTime": "string",
+                    "updatedDateTime": "string",
+                    "createdById": "string",
+                    "modifiedById": "string"
+                }
+            }
+        }
     }
 ]

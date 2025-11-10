@@ -508,3 +508,20 @@ GET http://10.96.188.180/api/v1/SocialHistory?patient_id=1
 
 {"detail":"Internal server error. Please contact People in charge of servers."}
 
+GET http://10.96.188.180/api/v1/PrescriptionList/?pageNo=0&pageSize=100
+
+{
+  data: PrescriptionList[];
+  pageNo: number;
+  pageSize: number;
+  totalRecords: number;
+  totalPages: number;
+}
+
+PrescriptionList {
+  Id: number;
+  IsDeleted: string;
+  CreatedDateTime: string;
+  UpdatedDateTime: string;
+  Value: string;
+}

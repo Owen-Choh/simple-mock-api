@@ -749,3 +749,32 @@ GET http://10.96.188.180/api/v1/PrescriptionList?pageNo=0&pageSize=100
     "totalRecords": 14,
     "totalPages": 1
 }
+
+GET http://10.96.188.180/api/v1/Prescription/PatientPrescription?patient_id=1&pageNo=0&pageSize=10
+
+{
+    "data": [
+        {
+            "IsDeleted": "0",
+            "PatientId": 1,
+            "PrescriptionListId": 2,
+            "Dosage": "1",
+            "FrequencyPerDay": 2,
+            "Instruction": "E2E test edit",
+            "StartDate": "2025-08-26T00:00:00",
+            "EndDate": "2025-09-09T00:00:00",
+            "IsAfterMeal": "1",
+            "PrescriptionRemarks": "created via e2e",
+            "Status": "0",
+            "Id": 7,
+            "CreatedDateTime": "2025-08-25T07:00:06.410000",
+            "UpdatedDateTime": "2025-10-15T06:04:09.673000",
+            "CreatedById": "S85f3847c88b",
+            "ModifiedById": "S85f3847c88b"
+        }
+    ],
+    "pageNo": 0,
+    "pageSize": 10,
+    "totalRecords": 1,
+    "totalPages": 1
+}

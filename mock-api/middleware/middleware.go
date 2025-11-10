@@ -1,17 +1,32 @@
 package middleware
 
 import (
+	"bytes"
 	"log"
 	"net/http"
-	"net/http/httputil"
+	// "net/http/httputil"
 )
+
+type ResponseWriterWrapper struct {
+    http.ResponseWriter
+    body *bytes.Buffer
+}
+
+func (w ResponseWriterWrapper) Write(b []byte) (int, error) {
+    w.body.Write(b)
+    return w.ResponseWriter.Write(b)
+}
 
 func LoggingMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		s, _ := httputil.DumpRequest(r, true)
-		log.Printf("Request received: %s", s)
+		// s, _ := httputil.DumpRequest(r, true)
+		// log.Printf("Request received: %s", s)
+		log.Printf("Request received: %s %s", r.Method, r.URL)
 
-		next.ServeHTTP(w, r)
+		// log response body/payload by wrapping ResponseWriter
+		wrappedWriter := &ResponseWriterWrapper{ResponseWriter: w, body: &bytes.Buffer{}}
+		next.ServeHTTP(wrappedWriter, r)
+		log.Printf("Response sent: %s", wrappedWriter.body.String())
 	})
 }
 

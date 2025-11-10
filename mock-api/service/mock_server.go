@@ -49,7 +49,9 @@ func (ms *MockServer) createAndLoadMux() (*http.ServeMux, error) {
 
 	for _, mapping := range mappings {
 		pattern := mapping.Method + " " + ms.MockPrefix + mapping.Path
+		log.Printf("creating handler for %s", pattern)
 		newMux.HandleFunc(pattern, func(w http.ResponseWriter, r *http.Request) {
+			log.Printf("matched pattern %s", pattern)
 			utils.WriteResponse(w, mapping.Response)
 		})
 	}
